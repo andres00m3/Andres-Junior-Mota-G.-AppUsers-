@@ -7,20 +7,23 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from "./material.module";
 import { HeaderComponent } from './components/header/header.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UsuarioService } from './components/usuario/usuario.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    UsuarioComponent
+    UsuarioComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [UsuarioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
