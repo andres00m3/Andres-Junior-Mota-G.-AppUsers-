@@ -16,7 +16,7 @@ import { UsuarioService } from './usuario.service';
 export class UsuarioComponent implements OnInit, AfterViewInit {
   private usuarioSubscription: Subscription;
 constructor(private UsuarioService:UsuarioService){}
-  desplegarColumnas = ['id','nombres', 'apellidos', 'genero', 'cedula','fechaDeNacimiento','cargo','SupervisorInmediato','DepartamentosID'];
+  desplegarColumnas = ['id','nombres', 'apellidos', 'genero', 'cedula','fechaDeNacimiento','cargo','SupervisorInmediato','departamentosId'];
   dataSource = new MatTableDataSource<usuario>();
   @ViewChild(MatSort) ordenamiento: MatSort;
 
