@@ -58,6 +58,14 @@
                         <th mat-header-cell *matHeaderCellDef mat-sort-header> DepartamentosID </th>
                         <td mat-cell *matCellDef="let element"> {{element.departamentosId}} </td>
                     </ng-container>
+                    <ng-container matColumnDef="Nombre">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Departamento </th>
+                        <td mat-cell *matCellDef="let element"> {{element.Nombre}} </td>
+                    </ng-container>
+                    <ng-container matColumnDef="codigo">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Codigo del Departamento </th>
+                        <td mat-cell *ngFor="let dtp of departamentos" value="element.departamentosId"> {{element.codigo}} </td>
+                    </ng-container>
                 </div>
 
             </div>

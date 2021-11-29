@@ -1,5 +1,5 @@
 export interface departamentos{
-  id:number;
+  departamentosId:number;
   Nombre:string;
   Codigo: string;
 }

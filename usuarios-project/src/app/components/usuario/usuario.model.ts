@@ -1,3 +1,5 @@
+import { departamentos } from "../departamentos/departamentos.model";
+
 export interface usuario{
   id:number;
   Nombres: string;
@@ -7,6 +9,6 @@ export interface usuario{
   FechaDeNacimiento: string;
   Cargo:string;
   SupervisorInmediato:string;
-  DepartamentosID:number;
+  Data: departamentos[];
 
 }

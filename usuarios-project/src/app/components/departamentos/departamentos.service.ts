@@ -15,7 +15,7 @@ private DepartamentosSubject = new Subject<departamentos[]>();
 constructor(private http: HttpClient){}
 
 
-obtenerDepartamentoss(){
+obtenerDepartamentos(){
   this.http.get<departamentos[]>(this.baseUrl + 'api/Departamentos')
   .subscribe((data)=>{
     this.DepartamentosLista = data;
